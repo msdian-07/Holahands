@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Hands - Premium Mehndi Booking</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Hola Hands Logo">
+            <h1>Hola Hands</h1>
+        </div>
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#gallery"><i class="fas fa-image"></i> Gallery</a>
+            <a href="#booking"><i class="fas fa-calendar-alt"></i> Book Now</a>
+            <a href="#contactus"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Our Breathtaking Designs</h2>
+        <div class="slider-controls">
+            <button class="slide-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slide-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <span class="trending">Trending</span>
+                <img src="images/design1.jpg" alt="Mehndi Design 1">
+                <div class="top-overlay">Design ID: D001</div>
+                <div class="center-overlay">Elegant Bridal Mehndi</div>
+                <div class="bottom-overlay">Bridal Mehndi - ₹5000</div>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="images/design2.jpg" alt="Mehndi Design 2">
+                <div class="top-overlay">Design ID: D002</div>
+                <div class="center-overlay">Traditional Full Hand</div>
+                <div class="bottom-overlay">Full Hand Mehndi - ₹3000</div>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="images/design3.jpg" alt="Mehndi Design 3">
+                <div class="top-overlay">Design ID: D003</div>
+                <div class="center-overlay">Simple Minimal Mehndi</div>
+                <div class="bottom-overlay">Minimal Mehndi - ₹1500</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/design4.jpg" alt="Mehndi Design 4">
+                <div class="top-overlay">Design ID: D004</div>
+                <div class="center-overlay">Modern Arabic Style</div>
+                <div class="bottom-overlay">Arabic Mehndi - ₹2500</div>
+            </div>
+
+            <div class="gallery-item">
+                <span class="trending">Trending</span>
+                <img src="images/design5.jpg" alt="Mehndi Design 5">
+                <div class="top-overlay">Design ID: D005</div>
+                <div class="center-overlay">Rajasthani Full Arm</div>
+                <div class="bottom-overlay">Full Arm Mehndi - ₹3500</div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="booking">
+        <h2>Book Your Mehndi Session</h2>
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <input type="date" id="date" required>
+            <input type="text" id="design_id" placeholder="Design Number" required>
+            <textarea id="message" placeholder="Additional Requests or Special Instructions"></textarea>
+            <button type="submit">Book Your Session Now</button>
+        </form>
+    </section>
+
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Delhi, India</p>
+        <p><i class="fas fa-phone"></i> Call: +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> Email: booking@holahands.com</p>
+    </section>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollUpBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ✅ Correct Firebase SDK Version -->
+    <script type="module" src="Script.js"></script>
+</body>
+</html>
